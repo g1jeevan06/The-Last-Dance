@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>High-Altitude Cargo</title>
+<title>The Last Dance — Cinematic Preview</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
@@ -63,8 +63,8 @@ body{
 }
 .slate h1 span{color:var(--dimmer)}
 .slate h1 em{
-  font-style:normal;color:var(--ice);letter-spacing:.05em;
-  font-size:.80em;margin-left:.22em;
+  display:block;font-style:normal;color:var(--dim);letter-spacing:.2em;
+  font-size:12px;margin-top:12px;line-height:1.2;
 }
 .slate-meta{display:flex;gap:22px;margin-left:34px;flex-wrap:wrap}
 .mk{display:flex;flex-direction:column;gap:2px}
@@ -288,12 +288,12 @@ kbd{
 
 <div class="reel">
   <header class="slate">
-    <h1>The Last<br><span>Dance</span><em>- Priviz 75</em></h1>
+    <h1>The Last<br><span>Dance</span><em>Cinematic Preview</em></h1>
     <div class="slate-meta">
       <div class="mk"><b>Scenes</b><i id="mkScenes">01–02</i></div>
       <div class="mk"><b>Shots</b><i id="mkShots">15</i></div>
       <div class="mk"><b>Runtime</b><i id="mkRun">1:40</i></div>
-      <div class="mk"><b>Pass</b><i>Previz v1.3</i></div>
+      <div class="mk"><b>Pass</b><i>Lookdev v2</i></div>
       <div class="mk"><b>Format</b><i>2.35 · 24 fps</i></div>
     </div>
     <div class="byline">
@@ -1262,7 +1262,7 @@ try{
   renderer.toneMapping      = THREE.ACESFilmicToneMapping;
   /* the whole film was lit before the pipeline changed, so the exposure
      comes back down to meet it rather than re-lighting eleven worlds */
-  renderer.toneMappingExposure = 0.40;
+  renderer.toneMappingExposure = 0.52;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type    = THREE.PCFSoftShadowMap;
   renderer.physicallyCorrectLights = false;   /* the rig is lit by eye, not by watts */
@@ -1348,10 +1348,63 @@ const CAMS = [camExt, camInt, camApt, camCave, camBunk, camTok, camWaj, camWild,
 const _v = new THREE.Vector3(), _v2 = new THREE.Vector3(), _v3 = new THREE.Vector3();
 const _c = new THREE.Color(), _c2 = new THREE.Color();
 
-/* material shorthand — the whole build is a matte grey model */
+/* Shared, deterministic surface maps. No image downloads or extra draw calls. */
+const SURFACES = (()=>{
+  const cache={};
+  const profiles={
+    stone:{roughness:.94,metalness:0,bump:.001,repeat:3},
+    metal:{roughness:.42,metalness:.68,bump:.00035,repeat:3},
+    cloth:{roughness:.98,metalness:0,bump:.00025,repeat:5},
+    skin:{roughness:.58,metalness:0,bump:.00008,repeat:2},
+    wood:{roughness:.72,metalness:0,bump:.0006,repeat:2},
+    hair:{roughness:.82,metalness:0,bump:.0002,repeat:4}
+  };
+  function maps(kind){
+    if(cache[kind]) return cache[kind];
+    const N=128, albedo=new Uint8Array(N*N*4), relief=new Uint8Array(N*N*4), rough=new Uint8Array(N*N*4);
+    const noise=(x,y)=>hash2((x+N)%N,(y+N)%N);
+    const tileNoise=(x,y,cells)=>{
+      const u=x/N*cells,v=y/N*cells,ix=Math.floor(u),iy=Math.floor(v),fx=ease(u-ix),fy=ease(v-iy);
+      const h=(a,b)=>hash2(a%cells,b%cells);
+      return lerp(lerp(h(ix,iy),h(ix+1,iy),fx),lerp(h(ix,iy+1),h(ix+1,iy+1),fx),fy);
+    };
+    for(let y=0;y<N;y++) for(let x=0;x<N;x++){
+      const i=(y*N+x)*4, grain=noise(x,y), broad=tileNoise(x,y,4)*.6+tileNoise(x,y,16)*.4;
+      let h=.5, v=.96, r=.9;
+      if(kind==='stone'){h=.3+grain*.28+broad*.32;v=.79+grain*.1+broad*.11;r=.8+grain*.2;}
+      if(kind==='metal'){const scratch=noise(x,0)>.965?.55:0;h=.45+grain*.08-scratch*.2;v=.88+grain*.07-scratch*.2;r=.67+grain*.2+scratch*.15;}
+      if(kind==='cloth'){h=.5+.17*Math.cos(x*Math.PI)*Math.cos(y*Math.PI)+grain*.1;v=.87+h*.12;r=.9+grain*.1;}
+      if(kind==='skin'){h=.45+grain*.1;v=.94+broad*.04+grain*.02;r=.78+grain*.2;}
+      if(kind==='wood'){h=.5+.25*Math.sin(x*Math.PI/8+Math.sin(y*Math.PI/64)*2)+grain*.1;v=.7+h*.3;r=.8+grain*.15;}
+      if(kind==='hair'){h=.5+.22*Math.sin(x*Math.PI/2)+grain*.08;v=.77+h*.22;r=.7+grain*.2;}
+      for(let c=0;c<3;c++){albedo[i+c]=Math.round(clamp(v,0,1)*255);relief[i+c]=Math.round(clamp(h,0,1)*255);rough[i+c]=Math.round(clamp(r,0,1)*255);}
+      albedo[i+3]=relief[i+3]=rough[i+3]=255;
+    }
+    const make=data=>{
+      const tex=new THREE.DataTexture(data,N,N,THREE.RGBAFormat);
+      tex.wrapS=tex.wrapT=THREE.RepeatWrapping; tex.repeat.setScalar(profiles[kind].repeat);
+      tex.magFilter=THREE.LinearFilter; tex.minFilter=THREE.LinearMipmapLinearFilter; tex.generateMipmaps=true;
+      tex.anisotropy=renderer?Math.min(4,renderer.capabilities.getMaxAnisotropy()):1; tex.needsUpdate=true;
+      return tex;
+    };
+    return cache[kind]={map:make(albedo),bumpMap:make(relief),roughnessMap:make(rough)};
+  }
+  function infer(color,o){
+    if(o.surface)return o.surface;
+    if([0x69717d,0x3e444e,0x848d99,0x585f6a,0x6a7280,0x767e8a].includes(color)||(o.metalness||0)>.25)return 'metal';
+    if([0x8a8f96,0xb58a70,0xc99b84].includes(color))return 'skin';
+    if([0x4e555f,0x3a4049,0x333941,0x565d67].includes(color))return 'cloth';
+    if(color===0x4a3428)return 'wood';
+    return 'stone';
+  }
+  return {profiles,maps,infer};
+})();
 function M(color, o){
-  return new THREE.MeshStandardMaterial(Object.assign(
-    {color:color, roughness:.92, metalness:.06, flatShading:true}, o||{}));
+  const options=Object.assign({},o||{}), kind=SURFACES.infer(color,options), p=SURFACES.profiles[kind];
+  delete options.surface;
+  const detail=options.transparent?{}:SURFACES.maps(kind);
+  return new THREE.MeshStandardMaterial(Object.assign({color:color,roughness:p.roughness,metalness:p.metalness,
+    flatShading:false,bumpScale:p.bump,envMapIntensity:kind==='metal'?1.15:.65},detail,options));
 }
 function GLOW(color, o){
   return new THREE.MeshBasicMaterial(Object.assign({color:color, fog:false}, o||{}));
@@ -1362,7 +1415,7 @@ const C = {
   deck:0x30353d, wall:0x3c424b, rib:0x2a2f37,
   cage:0x585f6a, chain:0x6a7280,
   fur:0x252a32, furLight:0x333944,
-  cloth:0x4e555f, kit:0x3a4049, skin:0x8a8f96,
+  cloth:0x4e555f, kit:0x3a4049, skin:0xb58a70,
   red:0xff2a18, ember:0xffa23c, hot:0xfff0c4
 };
 
@@ -1605,7 +1658,7 @@ function buildAircraft(){
 const EXT = (function(){
   const scene=new THREE.Scene();
   /* dense enough that the terrain's own edge is gone before the horizon */
-  scene.fog=new THREE.FogExp2(0xa6b8ca, 0.000155);
+  scene.fog=new THREE.FogExp2(0xa6b8ca, 0.000095);
 
   /* sky dome, vertex-graded horizon to zenith */
   const sg=new THREE.SphereGeometry(30000, 24, 16);
@@ -1621,7 +1674,7 @@ const EXT = (function(){
   sky.renderOrder=-1; scene.add(sky);
 
   /* range */
-  const seg=150, tg=new THREE.PlaneGeometry(TERRAIN_EXTENT,TERRAIN_EXTENT,seg,seg);
+  const seg=240, tg=new THREE.PlaneGeometry(TERRAIN_EXTENT,TERRAIN_EXTENT,seg,seg);
   tg.rotateX(-Math.PI/2);
   const tp=tg.attributes.position, tc=[];
   const cRock=new THREE.Color(C.rock), cMid=new THREE.Color(C.mid), cSnow=new THREE.Color(C.snow);
@@ -1629,24 +1682,41 @@ const EXT = (function(){
     const x=tp.getX(i), z=tp.getZ(i), h=terrainH(x,z);
     tp.setY(i,h);
     const grain=fbm(x/220,z/220,3);
-    let t=clamp(MU.smoothstep(h, 380, 1150)*(0.7+grain*0.5),0,1);
+    const dx=(terrainH(x+32,z)-terrainH(x-32,z))/64;
+    const dz=(terrainH(x,z+32)-terrainH(x,z-32))/64;
+    const slope=Math.sqrt(dx*dx+dz*dz);
+    let t=clamp(MU.smoothstep(h,260,1060)*(0.78+grain*.35)*(1-MU.smoothstep(slope,.48,1.3)),0,1);
     _c.copy(cRock).lerp(cMid, MU.smoothstep(h,-200,600));
     _c.lerp(cSnow, t);
     tc.push(_c.r,_c.g,_c.b);
   }
   tg.setAttribute('color', new THREE.Float32BufferAttribute(tc,3));
   tg.computeVertexNormals();
-  const terrain=new THREE.Mesh(tg, new THREE.MeshStandardMaterial({vertexColors:true, roughness:.96, metalness:0, flatShading:true}));
+  const terrainBump=SURFACES.maps('stone').bumpMap.clone(); terrainBump.repeat.set(64,64); terrainBump.needsUpdate=true;
+  const terrain=new THREE.Mesh(tg, new THREE.MeshStandardMaterial({vertexColors:true,roughness:.94,metalness:0,
+    flatShading:false,bumpMap:terrainBump,bumpScale:1.4,envMapIntensity:.45}));
+  terrain.receiveShadow=true;
   scene.add(terrain);
 
   /* light: low cold sun, big bounce off the snow */
   const sun=new THREE.DirectionalLight(0xfff2df, 1.55);
   sun.position.set(-9000,5200,7000); scene.add(sun);
+  scene.add(sun.target);
+  shadowsOn(sun,2048,{extent:270,near:100,far:18000,bias:-.00015,normalBias:.7});
   scene.add(new THREE.HemisphereLight(0xa9c3dc, 0x3b434f, 0.85));
   scene.add(new THREE.AmbientLight(0x2c333d, 0.6));
 
   /* cloud banks */
-  const cloudMat=M(0xe7eef5,{roughness:1, metalness:0});
+  const cloudPixels=new Uint8Array(128*128*4);
+  for(let y=0;y<128;y++)for(let x=0;x<128;x++){
+    const nx=(x-63.5)/63.5,ny=(y-63.5)/63.5,r=Math.sqrt(nx*nx+ny*ny),i=(y*128+x)*4;
+    const softness=Math.pow(Math.max(0,1-r*r),2.8);
+    cloudPixels[i]=cloudPixels[i+1]=cloudPixels[i+2]=255;
+    cloudPixels[i+3]=Math.round(softness*(.68+.32*fbm(x/28,y/28,3))*255);
+  }
+  const cloudMap=new THREE.DataTexture(cloudPixels,128,128,THREE.RGBAFormat); cloudMap.needsUpdate=true;
+  cloudMap.magFilter=THREE.LinearFilter; cloudMap.minFilter=THREE.LinearFilter;
+  const cloudMat=new THREE.SpriteMaterial({map:cloudMap,color:0xc8d5e3,transparent:true,opacity:.32,depthWrite:false,fog:true});
   const clouds=new THREE.Group(); scene.add(clouds);
   for(let i=0;i<26;i++){
     const gp=new THREE.Group();
@@ -1654,9 +1724,9 @@ const EXT = (function(){
     const puffs=3+Math.floor(rnd()*4);
     for(let p=0;p<puffs;p++){
       const s=rr(220,520);
-      const m=new THREE.Mesh(new THREE.IcosahedronGeometry(s,1), cloudMat);
+      const m=new THREE.Sprite(cloudMat);
       m.position.set(rr(-620,620), rr(-70,70), rr(-320,320));
-      m.scale.set(1,rr(0.34,0.5),1); gp.add(m);
+      m.scale.set(s*4,s*rr(1.1,1.65),1); gp.add(m);
     }
     clouds.add(gp);
   }
@@ -1672,6 +1742,7 @@ const EXT = (function(){
   const aircraft=buildAircraft();
   aircraft.scale.setScalar(AC);
   scene.add(aircraft);
+  shadowCast(aircraft);
 
   /* crash site: deterministic scan for a high face on the near side */
   let impact={x:0,y:0,z:0};
@@ -2091,8 +2162,8 @@ const INT = (function(){
 /*  metres, with its own cameras and its own night.                    */
 /* ================================================================== */
 const C2 = {
-  skin:0x9aa1a9, scar:0xaeb4bb, hair:0x191d24,
-  wall:0x232830, wallDark:0x14181e, wood:0x2d323a, sheet:0x565d67,
+  skin:0xc99b84, scar:0xa76f65, hair:0x191d24,
+  wall:0x232830, wallDark:0x14181e, wood:0x4a3428, sheet:0x565d67,
   tile:0x3d434c, chrome:0x767e8a, rope:0x8b7d62, city:0x161b23,
   warm:0xffb066, screen:0x8fd0ff
 };
@@ -2106,16 +2177,17 @@ const UPY = new THREE.Vector3(0,1,0);
 function buildFigure(o){
   o=o||{};
   const H=o.height||1.72, k=H/1.72;
-  const skin =M(o.skin||C2.skin, {roughness:.84, flatShading:false});
-  const cloth=M(o.cloth||0x333941,{roughness:.98, flatShading:false});
-  const hairM=M(o.hair||C2.hair,  {roughness:1,  flatShading:false});
+  const skinTones={0x8f959d:0xb48a70,0x8a9098:0xb28f78,0x7f858d:0x97735e,0x8a9099:0xb18c71,0x8d857a:0xaa7958,0x8a7f76:0x9c7053};
+  const skin =M(skinTones[o.skin]||o.skin||C2.skin, {surface:'skin',roughness:.58, flatShading:false});
+  const cloth=M(o.cloth||0x333941,{surface:'cloth',roughness:.98, flatShading:false});
+  const hairM=M(o.hair||C2.hair,  {surface:'hair',roughness:.82, flatShading:false});
   const root=new THREE.Group();
   root.rotation.order='YXZ';        // yaw, then tip — lying down stays predictable
   const sph=(r,sx,sy,sz,mat)=>{
-    const m=new THREE.Mesh(new THREE.SphereGeometry(r*k,14,10), mat);
+    const m=new THREE.Mesh(new THREE.SphereGeometry(r*k,20,14), mat);
     m.scale.set(sx,sy,sz); return m;
   };
-  const cyl=(rt,rb,h,mat)=>new THREE.Mesh(new THREE.CylinderGeometry(rt*k,rb*k,h*k,8), mat);
+  const cyl=(rt,rb,h,mat)=>new THREE.Mesh(new THREE.CylinderGeometry(rt*k,rb*k,h*k,12), mat);
 
   /* hips carry the whole figure; the root stays on the floor */
   const hips=new THREE.Group(); hips.position.y=0.93*k; root.add(hips);
@@ -2130,6 +2202,15 @@ function buildFigure(o){
   const head=new THREE.Group(); head.position.y=0.13*k; neck.add(head);
   const skull=sph(0.108,0.92,1.08,1.00,skin); head.add(skull);
   const jaw=sph(0.070,0.90,0.72,0.92,skin); jaw.position.set(0,-0.055*k,0.028*k); head.add(jaw);
+  /* Small anatomical landmarks keep close-ups from reading as blank mannequins. */
+  const nose=sph(.021,.58,1.25,.82,skin); nose.position.set(0,-.014*k,.105*k); head.add(nose);
+  const eyeMat=new THREE.MeshStandardMaterial({color:0x302b26,roughness:.3,metalness:0});
+  [-1,1].forEach(side=>{
+    const eye=sph(.0085,1.12,.52,.36,eyeMat); eye.position.set(side*.039*k,.017*k,.097*k); head.add(eye);
+    const ear=sph(.023,.42,1,.58,skin); ear.position.set(side*.101*k,-.005*k,0); head.add(ear);
+  });
+  const lip=sph(.021,1,.17,.24,M(0x875950,{surface:'skin',roughness:.65}));
+  lip.position.set(0,-.058*k,.087*k); head.add(lip);
 
   /* hair reads the character faster than the face ever will */
   const hair=new THREE.Group(); head.add(hair);
@@ -2820,7 +2901,7 @@ const BUNK = (function(){
   [-2.3,2.3].forEach(x=> table.add(BX(0.5,0.95,1.5, concD, x,0.48,0)));
 
   /* the castle, turning in light over the table */
-  const holoMat=GLOW(C3.holo,{transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false});
+  const holoMat=GLOW(C3.holo,{transparent:true,opacity:0.16,blending:THREE.AdditiveBlending,depthWrite:false});
   const holo=new THREE.Group(); holo.position.set(0,1.62,0); holo.scale.setScalar(1.35); scene.add(holo);
   holo.add(BX(1.5,0.7,1.1, holoMat, 0,0.35,0));
   holo.add(BX(1.9,0.06,1.4, holoMat, 0,0.02,0));
@@ -6630,7 +6711,12 @@ function step(t, dt){
     updateInterior(t, dt);
   }
   frameShot(t, si, u);
-  if(S.world==='ext') EXT.snow.position.set(camExt.position.x, camExt.position.y, camExt.position.z);
+  if(S.world==='ext'){
+    EXT.snow.position.set(camExt.position.x, camExt.position.y, camExt.position.z);
+    EXT.sun.target.position.copy(EXT.aircraft.position);
+    EXT.sun.position.copy(EXT.aircraft.position).add(_v.set(-9000,5200,7000));
+    EXT.sun.target.updateMatrixWorld(true);
+  }
 
   /* the impact flash, and the flare of the lighter catching */
   let fl = (t>=T.impact && t<T.impact+0.6) ? Math.max(0, 0.92*(1-ramp(t,T.impact,T.impact+0.55))) : 0;
@@ -7426,4 +7512,3 @@ if(renderer) requestAnimationFrame(tick);
 
 </body>
 </html>
-
