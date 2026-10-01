@@ -1,0 +1,103 @@
+{
+  "sourceSha256": "69b876730ea2dbf8ea70cbcf2fda85320526011703c078826eb163f34bc9395e",
+  "fps": 24,
+  "duration": 334,
+  "frames": 8016,
+  "shots": 78,
+  "worlds": {
+    "ext": {
+      "nodes": 284,
+      "meshes": 230,
+      "skipped": {
+        "Points": 5
+      },
+      "bytes": 6553756
+    },
+    "int": {
+      "nodes": 361,
+      "meshes": 297,
+      "skipped": {
+        "Points": 4
+      },
+      "bytes": 6580045
+    },
+    "apt": {
+      "nodes": 349,
+      "meshes": 284,
+      "skipped": {
+        "Points": 4
+      },
+      "bytes": 1500514
+    },
+    "cave": {
+      "nodes": 222,
+      "meshes": 171,
+      "skipped": {
+        "Points": 3
+      },
+      "bytes": 2217868
+    },
+    "bunker": {
+      "nodes": 420,
+      "meshes": 284,
+      "skipped": {
+        "Points": 1
+      },
+      "bytes": 1422729
+    },
+    "tokyo": {
+      "nodes": 1248,
+      "meshes": 951,
+      "skipped": {
+        "Points": 7
+      },
+      "bytes": 13037853
+    },
+    "wajiro": {
+      "nodes": 1176,
+      "meshes": 969,
+      "skipped": {
+        "Points": 2
+      },
+      "bytes": 5591314
+    },
+    "wild": {
+      "nodes": 1023,
+      "meshes": 975,
+      "skipped": {
+        "Points": 3
+      },
+      "bytes": 4816233
+    },
+    "grave": {
+      "nodes": 1245,
+      "meshes": 1114,
+      "skipped": {
+        "Points": 4
+      },
+      "bytes": 7046314
+    },
+    "castle": {
+      "nodes": 904,
+      "meshes": 802,
+      "skipped": {
+        "Points": 6
+      },
+      "bytes": 5091451
+    },
+    "war": {
+      "nodes": 2270,
+      "meshes": 1833,
+      "skipped": {
+        "Points": 3
+      },
+      "bytes": 11168289
+    }
+  },
+  "limitations": [
+    "Browser particles (Points), procedural audio, speech synthesis, HUD, fades and title overlays are not exported.",
+    "Materials are USD Preview Surface approximations; browser shader effects, fog, environment maps and animated material properties require Unreal work.",
+    "Light intensity conversion is approximate. Final exposure and lighting need an Unreal review.",
+    "Characters retain their procedural mesh-part animation; no skeletal rig, Control Rig or retargetable animation is created."
+  ]
+}

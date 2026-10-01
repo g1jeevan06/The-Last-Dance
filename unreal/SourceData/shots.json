@@ -1,0 +1,3008 @@
+{
+  "fps": 24,
+  "duration": 334,
+  "shots": [
+    {
+      "no": "01",
+      "name": "Establishing",
+      "dur": 7,
+      "world": "ext",
+      "slug": "EXT. ALPINE RANGE — DAY",
+      "lens": "32mm",
+      "move": "Aerial crane, slow push",
+      "tags": [
+        "VFX"
+      ],
+      "note": "Range built to plate scale. Aircraft held to roughly a tenth of frame width — the altitude is the point, not the plane.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Snow to the horizon. Nothing down there moves."
+        },
+        {
+          "t": 0.42,
+          "s": "A military transport crosses the range, small against the peaks."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "There are places on this earth no road was ever meant to reach. So men fly over them."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I have the same dream. It always starts a long way up, where there is nothing underneath."
+        }
+      ],
+      "start": 0
+    },
+    {
+      "no": "02",
+      "name": "The Transport",
+      "dur": 6,
+      "world": "ext",
+      "slug": "EXT. TRANSPORT — CONTINUOUS",
+      "lens": "85mm",
+      "move": "Tracking, locked to airframe",
+      "tags": [
+        "VFX"
+      ],
+      "note": "Camera rigged to the port side and drifting forward along the fuselage. Ridge line streams behind to carry the speed.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Four engines. Ice on the leading edge."
+        },
+        {
+          "t": 0.48,
+          "s": "Whatever it is carrying, it is carrying a long way from anyone."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And they carry things across that should have been left where they were found."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I have never been on that plane. I know exactly what it sounds like."
+        }
+      ],
+      "start": 7
+    },
+    {
+      "no": "03",
+      "name": "The Cage",
+      "dur": 8,
+      "world": "int",
+      "slug": "INT. CARGO HOLD — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Slow dolly in, past Reynolds",
+      "tags": [
+        "SFX",
+        "PRACTICAL"
+      ],
+      "note": "Reynolds wipes frame right at the halfway mark and clears the cage. Creature stays in shadow until the eyes carry the cut.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A steel cage fills the hold, chained down to the deck."
+        },
+        {
+          "t": 0.26,
+          "s": "COLONEL REYNOLDS watches it. He does not blink."
+        },
+        {
+          "t": 0.52,
+          "s": "Something inside breathes. Slow. Far too large."
+        },
+        {
+          "t": 0.76,
+          "s": "Its eyes open. They burn red."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "This one had been asleep a long time. Long enough that somebody thought a cage would hold it."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "There is a cage in the hold, and men standing round it who think a cage is enough."
+        }
+      ],
+      "start": 13
+    },
+    {
+      "no": "04",
+      "name": "It Wakes",
+      "dur": 7,
+      "world": "int",
+      "slug": "INT. CARGO HOLD — CONTINUOUS",
+      "lens": "65mm",
+      "move": "Push to close, slight arc",
+      "tags": [
+        "CREATURE",
+        "SFX"
+      ],
+      "note": "Roar takes a 3-degree lens punch and a low-frequency shake. Chain links are simulated and scatter live on the deck.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The creature rises to its full height."
+        },
+        {
+          "t": 0.3,
+          "s": "It roars — the sound goes straight through the airframe."
+        },
+        {
+          "t": 0.56,
+          "s": "The chains pull taut."
+        },
+        {
+          "t": 0.72,
+          "s": "They snap. Links ring off the deck."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0.45,
+          "s": "It did not care for the chains. It cared even less for the men who fitted them."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "It always wakes up. It always looks straight at me."
+        }
+      ],
+      "start": 21
+    },
+    {
+      "no": "05",
+      "name": "Breach",
+      "dur": 8,
+      "world": "int",
+      "slug": "INT. CARGO HOLD — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Wide, handheld, hard roll",
+      "tags": [
+        "CREATURE",
+        "STUNT",
+        "SFX"
+      ],
+      "note": "Cabin roll is carried by camera tilt and by loose objects sliding to the low side — no set gimbal needed at this stage.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "It takes the bars in its jaws and tears the cage open."
+        },
+        {
+          "t": 0.3,
+          "who": "REYNOLDS",
+          "s": "Open fire!"
+        },
+        {
+          "t": 0.46,
+          "s": "Muzzle flash fills the hold. The rounds do nothing."
+        },
+        {
+          "t": 0.72,
+          "s": "The deck tilts. Men go down and slide."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0.62,
+          "s": "You may as well shoot at weather."
+        },
+        {
+          "v": "f",
+          "t": 0.62,
+          "s": "I want to tell them not to bother."
+        }
+      ],
+      "start": 28
+    },
+    {
+      "no": "06",
+      "name": "Fire In The Hold",
+      "dur": 6,
+      "world": "int",
+      "slug": "INT. CARGO HOLD — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Low, canted, drifting",
+      "tags": [
+        "VFX",
+        "SFX",
+        "STUNT"
+      ],
+      "note": "Hull opens on the port side — daylight and snow stream in against the fire. Fog tints toward ember as the hold fills.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A fuel line goes. Fire floods the port side."
+        },
+        {
+          "t": 0.36,
+          "s": "The hull opens. Sky, and then snow, screaming in."
+        },
+        {
+          "t": 0.68,
+          "s": "The creature stands in the fire. It is not burning."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Fire took the hold. Nothing in the fire was burning."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Then the fire. It walks through the fire and nothing happens to it."
+        }
+      ],
+      "start": 36
+    },
+    {
+      "no": "07",
+      "name": "Impact",
+      "dur": 10,
+      "world": "ext",
+      "slug": "EXT. MOUNTAIN FACE — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Locked wide, crane up on smoke",
+      "tags": [
+        "VFX",
+        "SFX"
+      ],
+      "note": "Camera is planted on the ridge opposite and left there. Fireball, shockwave, debris and the snow blast are all one event at frame 1140.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The transport comes down trailing flame."
+        },
+        {
+          "t": 0.5,
+          "s": "It hits the ridge."
+        },
+        {
+          "t": 0.62,
+          "s": "The mountain takes the sound."
+        },
+        {
+          "t": 0.86,
+          "s": "Smoke stands up off the snow and does not stop."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Then the mountain came up to meet them, and the mountain kept the sound."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "And then the mountain. And then I am awake."
+        }
+      ],
+      "start": 42
+    },
+    {
+      "no": "08",
+      "name": "Waking",
+      "dur": 6,
+      "world": "apt",
+      "sc": "02",
+      "slug": "INT. ZARA’S APARTMENT — NIGHT",
+      "lens": "50mm",
+      "move": "Static, low, foot of bed",
+      "tags": [
+        "PRACTICAL"
+      ],
+      "note": "Hard cut out of the fireball into black. She comes up on the first frame — the crash was hers. Only the window carries her, so the room stays a silhouette.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "ZARA (20s) comes up out of the dark, gasping."
+        },
+        {
+          "t": 0.3,
+          "s": "The crash was a dream. It does not feel like one."
+        },
+        {
+          "t": 0.58,
+          "s": "She sits in the window light, shaking."
+        },
+        {
+          "t": 0.8,
+          "s": "She waits for her hands to stop. They do not."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Two thousand miles away, a woman wakes out of a fire she has never been anywhere near."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Every night. Then my own ceiling, and my own hands, and neither of them are steady."
+        }
+      ],
+      "start": 52
+    },
+    {
+      "no": "09",
+      "name": "The Cigarette",
+      "dur": 5,
+      "world": "apt",
+      "sc": "02",
+      "slug": "INT. ZARA’S APARTMENT — CONTINUOUS",
+      "lens": "85mm",
+      "move": "Close, slow drift left",
+      "tags": [
+        "PRACTICAL",
+        "SFX"
+      ],
+      "note": "Lighter flare is the only warm source in the room and it is on her hands, not her face. Two takes of the shake — the flame should not find the tip first time.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She finds the pack by feel."
+        },
+        {
+          "t": 0.34,
+          "s": "The lighter takes three tries."
+        },
+        {
+          "t": 0.66,
+          "s": "Smoke. Her hands settle. Her eyes do not."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "She has learned what to do with her hands when they shake."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Three tries with a lighter. That is my whole morning."
+        }
+      ],
+      "start": 58
+    },
+    {
+      "no": "10",
+      "name": "The Scars",
+      "dur": 7,
+      "world": "apt",
+      "sc": "02",
+      "slug": "INT. BATHROOM — MOMENTS LATER",
+      "lens": "65mm",
+      "move": "Push in on her back",
+      "tags": [
+        "MAKEUP",
+        "PRACTICAL"
+      ],
+      "note": "The reveal of the scene. Top light and steam, no face. Prosthetic scars run old and layered — she has been surviving since she was a child, and the make-up has to date them.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Water. Steam takes the room."
+        },
+        {
+          "t": 0.3,
+          "s": "She stands under it and does not move."
+        },
+        {
+          "t": 0.56,
+          "s": "The camera finds her back."
+        },
+        {
+          "t": 0.78,
+          "s": "Scars. Old ones, over older ones. A childhood of them."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And she has learned to keep her back to the mirror. Everything that happened to her is written on it."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I do not look at my back any more. I already know what it says."
+        }
+      ],
+      "start": 63
+    },
+    {
+      "no": "11",
+      "name": "The Cave",
+      "dur": 6,
+      "world": "cave",
+      "sc": "02",
+      "slug": "INT. CAVE — FLASHBACK — YEARS EARLIER",
+      "lens": "28mm",
+      "move": "Wide, hand-held, following",
+      "tags": [
+        "VFX",
+        "ART"
+      ],
+      "note": "Flashback grade: one lantern, one shaft, everything else black. YOUNG ZARA is eleven. The chasm is in frame from the first second so the audience is ahead of them.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A cave the size of a church. Dust in a shaft of light."
+        },
+        {
+          "t": 0.26,
+          "s": "YOUNG ZARA (11) follows her FATHER along the ledge."
+        },
+        {
+          "t": 0.54,
+          "s": "They are hunting something. The lantern swings."
+        },
+        {
+          "t": 0.8,
+          "s": "Below them, the floor simply ends."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "It starts in a cave. A lantern, a ledge, and a father who took his daughter hunting."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I was eleven. He took me hunting because I asked him to."
+        }
+      ],
+      "start": 70
+    },
+    {
+      "no": "12",
+      "name": "The Rope",
+      "dur": 6,
+      "world": "cave",
+      "sc": "02",
+      "slug": "INT. CAVE — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Low across the chasm, whip down",
+      "tags": [
+        "STUNT",
+        "SFX"
+      ],
+      "note": "His slip is a real drop onto a decelerator. She hits the lip hard — pad the ledge. Rope is dressed to a stone anchor and takes the load on camera.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The rock goes out from under him."
+        },
+        {
+          "t": 0.18,
+          "s": "He drops. She is already on the floor, reaching."
+        },
+        {
+          "t": 0.42,
+          "s": "Her hand closes on his. It holds."
+        },
+        {
+          "t": 0.7,
+          "s": "The rope to the stone pulls taut and stays."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The rock gave. She caught him. For a moment she was strong enough."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "The rock went. And I had him. I had him."
+        }
+      ],
+      "start": 76
+    },
+    {
+      "no": "13",
+      "name": "He Lets Go",
+      "dur": 7,
+      "world": "cave",
+      "sc": "02",
+      "slug": "INT. CAVE — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Tight on the hands, tilt into the dark",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "The whole film is in this shot. Play the rope parting in the cutaway, then hold the two hands. He decides. Camera goes with him and finds nothing.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The rope begins to part. One strand. Then three."
+        },
+        {
+          "t": 0.3,
+          "s": "He looks up at her. He has already done the arithmetic."
+        },
+        {
+          "t": 0.52,
+          "who": "FATHER",
+          "s": "Let go, Zara."
+        },
+        {
+          "t": 0.66,
+          "s": "She does not. So he does."
+        },
+        {
+          "t": 0.82,
+          "s": "He falls into the dark and the dark takes him."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The rope began to count itself out."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "For eleven seconds I was strong enough."
+        }
+      ],
+      "start": 82
+    },
+    {
+      "no": "14",
+      "name": "Jax Calls",
+      "dur": 5,
+      "world": "apt",
+      "sc": "02",
+      "slug": "INT. ZARA’S APARTMENT — PRESENT",
+      "lens": "24mm",
+      "move": "Static, phone foreground",
+      "tags": [
+        "PRACTICAL"
+      ],
+      "note": "Cut back on the buzz. Screen light is the only movement in frame — it strobes the ceiling while she stands in the bathroom door and does nothing.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A phone buzzes itself around the table."
+        },
+        {
+          "t": 0.26,
+          "s": "The screen reads JAX."
+        },
+        {
+          "t": 0.54,
+          "s": "She stands in the doorway and lets it ring."
+        },
+        {
+          "t": 0.82,
+          "s": "It stops. The room goes dark again."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "She has not answered a telephone in a year."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "That is why I do not pick up the phone."
+        }
+      ],
+      "start": 89
+    },
+    {
+      "no": "15",
+      "name": "Balcony",
+      "dur": 6,
+      "world": "apt",
+      "sc": "02",
+      "slug": "EXT. BALCONY — CONTINUOUS",
+      "lens": "32mm",
+      "move": "Slow crane back, city behind",
+      "tags": [
+        "VFX",
+        "PRACTICAL"
+      ],
+      "note": "Pull the city up behind her as we leave. She is in a towel, in the cold, on purpose. End of scene — hold the wide two beats longer than feels comfortable.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A towel. The cold does not seem to reach her."
+        },
+        {
+          "t": 0.3,
+          "s": "She smokes and watches the city do nothing."
+        },
+        {
+          "t": 0.6,
+          "s": "Whatever is coming, it has already started."
+        },
+        {
+          "t": 0.84,
+          "s": "The ember is the brightest thing for a mile."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "But the dead keep their appointments. And hers was already on its way."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I have never once said no to Jax. Not really."
+        }
+      ],
+      "start": 94
+    },
+    {
+      "no": "16",
+      "name": "Jax Arrives",
+      "dur": 3,
+      "world": "apt",
+      "sc": "03",
+      "slug": "INT. ZARA’S APARTMENT — NIGHT",
+      "lens": "35mm",
+      "move": "Static, door in depth",
+      "tags": [
+        "PRACTICAL"
+      ],
+      "note": "He lets himself in. Play it like a man who has done this a hundred times and still knocks.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "JAX comes in without waiting to be asked."
+        },
+        {
+          "t": 0.55,
+          "who": "JAX",
+          "s": "You are going to want to sit down."
+        }
+      ],
+      "narr": [],
+      "start": 100
+    },
+    {
+      "no": "17",
+      "name": "The Job",
+      "dur": 4,
+      "world": "apt",
+      "sc": "03",
+      "slug": "INT. ZARA’S APARTMENT — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Two-shot over the table",
+      "tags": [
+        "ART"
+      ],
+      "note": "The key exists only as a photograph in this scene. Keep the real one out of frame until Tokyo.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "JAX",
+          "s": "An antique key. A Collector has it."
+        },
+        {
+          "t": 0.36,
+          "s": "He puts a photograph on the table."
+        },
+        {
+          "t": 0.62,
+          "who": "JAX",
+          "s": "It opens a castle. Reynolds wants it."
+        },
+        {
+          "t": 0.85,
+          "who": "JAX",
+          "s": "So we take it first."
+        }
+      ],
+      "narr": [],
+      "start": 103
+    },
+    {
+      "no": "18",
+      "name": "The Bunker",
+      "dur": 4,
+      "world": "bunker",
+      "sc": "03",
+      "slug": "INT. MILITARY BUNKER — UNDERGROUND",
+      "lens": "28mm",
+      "move": "Slow push down the table",
+      "tags": [
+        "VFX",
+        "ART"
+      ],
+      "note": "Reynolds is down an eye since the crash. Five operators, one empty chair. The castle sits over the table in light.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Underground. COLONEL REYNOLDS, one eye now."
+        },
+        {
+          "t": 0.3,
+          "s": "Five elite soldiers. A castle turning in the light."
+        },
+        {
+          "t": 0.62,
+          "who": "REYNOLDS",
+          "s": "We found it. And something is living in it."
+        },
+        {
+          "t": 0.86,
+          "s": "They need the key to go in the front door."
+        }
+      ],
+      "narr": [],
+      "start": 107
+    },
+    {
+      "no": "19",
+      "name": "Captain Rex",
+      "dur": 4,
+      "world": "bunker",
+      "sc": "03",
+      "slug": "INT. BUNKER — ARMOURY",
+      "lens": "50mm",
+      "move": "Behind him, tilt to the mask",
+      "tags": [
+        "CREATURE",
+        "VFX"
+      ],
+      "note": "From the back only. The mask goes on last and the eye lights come up red — the same red as the thing in the hold.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "SOLDIER",
+          "s": "Sir, we need a better plan."
+        },
+        {
+          "t": 0.28,
+          "s": "Reynolds smiles. There is a sixth soldier."
+        },
+        {
+          "t": 0.58,
+          "s": "CAPTAIN REX, seen from behind, arming up."
+        },
+        {
+          "t": 0.8,
+          "s": "The mask locks. The eyes come up red."
+        }
+      ],
+      "narr": [],
+      "start": 111
+    },
+    {
+      "no": "20",
+      "name": "One Last Dance",
+      "dur": 4,
+      "world": "apt",
+      "sc": "03",
+      "slug": "INT. ZARA’S APARTMENT — CONTINUOUS",
+      "lens": "65mm",
+      "move": "Close on Zara, slow in",
+      "tags": [
+        "PRACTICAL"
+      ],
+      "note": "She says no. The no is about her father and Jax knows it. Then she nods, and the film starts.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "JAX",
+          "s": "One last dance, Z."
+        },
+        {
+          "t": 0.3,
+          "who": "ZARA",
+          "s": "No."
+        },
+        {
+          "t": 0.55,
+          "s": "She is not thinking about the money. She is thinking about a rope."
+        },
+        {
+          "t": 0.8,
+          "s": "She nods."
+        }
+      ],
+      "narr": [],
+      "start": 115
+    },
+    {
+      "no": "21",
+      "name": "Tokyo",
+      "dur": 3,
+      "world": "tokyo",
+      "sc": "04",
+      "slug": "EXT. TOKYO — NIGHT",
+      "lens": "24mm",
+      "move": "High wide, drifting",
+      "tags": [
+        "VFX"
+      ],
+      "note": "Establisher. Everything from here to the rollover happens in one city and one grade: wet street, hard neon.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Tokyo. Ten million people and none of them looking."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Tokyo. Where everything is for sale."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Tokyo. Nobody here looks up."
+        }
+      ],
+      "start": 119
+    },
+    {
+      "no": "22",
+      "name": "The Deal",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "04",
+      "slug": "EXT. NIGHT MARKET — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Hand-held, through the crowd",
+      "tags": [
+        "CROWD",
+        "ART"
+      ],
+      "note": "The pass happens on the move and off-centre. Crowd carries the frame, not the actors.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A market. Steam, lanterns, three hundred people."
+        },
+        {
+          "t": 0.38,
+          "s": "They find the COLLECTOR between two stalls."
+        },
+        {
+          "t": 0.68,
+          "s": "Money goes one way. The KEY goes the other."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Including a key nobody has turned in a thousand years."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "A key, for money. It should have taken four minutes."
+        }
+      ],
+      "start": 122
+    },
+    {
+      "no": "23",
+      "name": "Rex At The Stall",
+      "dur": 3,
+      "world": "tokyo",
+      "sc": "04",
+      "slug": "EXT. NIGHT MARKET — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Static, crowd wiping frame",
+      "tags": [
+        "CREATURE"
+      ],
+      "note": "Rex asks once. The Collector does not need to be asked twice — he points.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "CAPTAIN REX steps into the lanterns."
+        },
+        {
+          "t": 0.45,
+          "s": "The Collector points. He does not even hesitate."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The hunter was one stall behind them."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "It took two. Then he found us."
+        }
+      ],
+      "start": 126
+    },
+    {
+      "no": "24",
+      "name": "Market Chase",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "04",
+      "slug": "EXT. NIGHT MARKET — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Running lead, hand-held",
+      "tags": [
+        "STUNT",
+        "CROWD"
+      ],
+      "note": "Camera runs ahead of them and lets the soldiers close from the back of frame. Stalls go over.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "They run. The crowd is a wall and then a river."
+        },
+        {
+          "t": 0.5,
+          "s": "Rex sends his men through it after them."
+        }
+      ],
+      "narr": [],
+      "start": 129
+    },
+    {
+      "no": "25",
+      "name": "Onto The Highway",
+      "dur": 3,
+      "world": "tokyo",
+      "sc": "05",
+      "slug": "EXT. TOKYO HIGHWAY — NIGHT",
+      "lens": "32mm",
+      "move": "Tracking low on the car",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "Wheels first. The elevated road is the set — nothing above it but sodium light.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The car comes onto the elevated road doing a hundred."
+        }
+      ],
+      "narr": [],
+      "start": 133
+    },
+    {
+      "no": "26",
+      "name": "Fire From The SUV",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "05",
+      "slug": "EXT. TOKYO HIGHWAY — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Side-by-side tracking",
+      "tags": [
+        "SFX",
+        "STUNT"
+      ],
+      "note": "Rex leans out of the military SUV and puts rounds through the back glass. Squibs on the pillar, glass on the rig.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A military SUV comes up on their shoulder."
+        },
+        {
+          "t": 0.35,
+          "s": "Rex leans out and fires."
+        },
+        {
+          "t": 0.7,
+          "s": "The back window goes."
+        }
+      ],
+      "narr": [],
+      "start": 136
+    },
+    {
+      "no": "27",
+      "name": "Jax Shoots Back",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "05",
+      "slug": "EXT. TOKYO HIGHWAY — CONTINUOUS",
+      "lens": "35mm",
+      "move": "Reverse, out of the back window",
+      "tags": [
+        "SFX",
+        "STUNT",
+        "VFX"
+      ],
+      "note": "Two hits, two spins. Keep the wrecks alive behind them — they are the ones that end the sequence.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Jax finds the guns under the seat."
+        },
+        {
+          "t": 0.34,
+          "s": "He fires back through the empty window."
+        },
+        {
+          "t": 0.7,
+          "s": "Two SUVs let go and start to spin."
+        }
+      ],
+      "narr": [],
+      "start": 140
+    },
+    {
+      "no": "28",
+      "name": "Rollover",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "05",
+      "slug": "EXT. TOKYO HIGHWAY — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Locked wide, the whole event",
+      "tags": [
+        "STUNT",
+        "SFX",
+        "VFX"
+      ],
+      "note": "Rex is half out of his door reaching for the key when the spinning wrecks arrive. Everything goes over at once.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Rex climbs out to jump for the key."
+        },
+        {
+          "t": 0.32,
+          "s": "The spinning wrecks arrive first."
+        },
+        {
+          "t": 0.58,
+          "s": "Impact. The car goes over and keeps going."
+        },
+        {
+          "t": 0.84,
+          "s": "Chaos, and then nothing moving."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And it ends the way these things always end."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I remember the road. Then the roof. Then the road again."
+        }
+      ],
+      "start": 144
+    },
+    {
+      "no": "29",
+      "name": "Out Of The Wreck",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "06",
+      "slug": "EXT. HIGHWAY — WRECKAGE — CONTINUOUS",
+      "lens": "35mm",
+      "move": "Low, smoke in the lens",
+      "tags": [
+        "SFX",
+        "STUNT"
+      ],
+      "note": "She comes round first. Door goes with a boot, twice.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Zara comes round upside down in the smoke."
+        },
+        {
+          "t": 0.4,
+          "s": "She wakes Jax. The door goes on the second kick."
+        },
+        {
+          "t": 0.75,
+          "s": "They crawl out onto the road."
+        }
+      ],
+      "narr": [],
+      "start": 148
+    },
+    {
+      "no": "30",
+      "name": "The Fist",
+      "dur": 4,
+      "world": "tokyo",
+      "sc": "06",
+      "slug": "EXT. HIGHWAY — WRECKAGE — CONTINUOUS",
+      "lens": "85mm",
+      "move": "Close on the arm",
+      "tags": [
+        "CREATURE",
+        "SFX"
+      ],
+      "note": "The arm hangs out of the crushed window with the key in it. Then the eyes come on and the hand does not move.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Rex is pinned in his own SUV. His arm hangs out."
+        },
+        {
+          "t": 0.35,
+          "s": "The KEY is in his fist."
+        },
+        {
+          "t": 0.62,
+          "s": "Jax pulls. The eyes come on red."
+        },
+        {
+          "t": 0.85,
+          "s": "The hand does not open."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "He would not open his fist."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "The key was in his fist. He would not let go."
+        }
+      ],
+      "start": 152
+    },
+    {
+      "no": "31",
+      "name": "The Cut",
+      "dur": 3,
+      "world": "tokyo",
+      "sc": "06",
+      "slug": "EXT. HIGHWAY — WRECKAGE — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Whip to Zara, hard cut",
+      "tags": [
+        "STUNT",
+        "SFX",
+        "VFX"
+      ],
+      "note": "One swing with a torn panel. We stay on her face for it, not on the arm.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Soldiers are getting up around them."
+        },
+        {
+          "t": 0.34,
+          "s": "Zara picks up a piece of the car."
+        },
+        {
+          "t": 0.66,
+          "s": "One swing."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "So she took the fist."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "So I stopped asking."
+        }
+      ],
+      "start": 156
+    },
+    {
+      "no": "32",
+      "name": "Into The Night",
+      "dur": 3,
+      "world": "tokyo",
+      "sc": "06",
+      "slug": "EXT. HIGHWAY — WRECKAGE — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Hand-held, receding",
+      "tags": [
+        "SFX"
+      ],
+      "note": "Jax carries the hand until he has the key out of it. Rex screams behind them and does not stop.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Jax takes the key out of the hand and drops it."
+        },
+        {
+          "t": 0.45,
+          "s": "Behind them Rex is screaming. They keep walking."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Nothing is ever taken from a man like that. Only borrowed."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I would do it again."
+        }
+      ],
+      "start": 159
+    },
+    {
+      "no": "33",
+      "name": "Safehouse",
+      "dur": 4,
+      "world": "apt",
+      "sc": "07",
+      "slug": "INT. SAFEHOUSE — LATER",
+      "lens": "50mm",
+      "move": "Quiet two-shot, one lamp",
+      "tags": [
+        "PRACTICAL",
+        "MAKEUP"
+      ],
+      "note": "First still air since Tokyo. She tapes herself up, he cleans somebody else’s blood off the key.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A safehouse. One lamp. Two people breathing again."
+        },
+        {
+          "t": 0.42,
+          "who": "ZARA",
+          "s": "What is so special about this key?"
+        },
+        {
+          "t": 0.74,
+          "who": "JAX",
+          "s": "It is from the golden era of the Wajiro Kingdom."
+        }
+      ],
+      "narr": [],
+      "start": 162
+    },
+    {
+      "no": "34",
+      "name": "The Golden Era",
+      "dur": 4,
+      "world": "wajiro",
+      "sc": "07",
+      "slug": "EXT. WAJIRO KINGDOM — FLASHBACK",
+      "lens": "32mm",
+      "move": "Crane up over the training ground",
+      "tags": [
+        "VFX",
+        "CROWD"
+      ],
+      "note": "The only warm, wide, beautiful frame in the film. Hundreds training. Gold everywhere, and it means something.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Long ago. A kingdom the colour of a coin."
+        },
+        {
+          "t": 0.4,
+          "s": "Hundreds of warriors and samurai, training."
+        },
+        {
+          "t": 0.75,
+          "who": "JAX (V.O.)",
+          "s": "They were strong. But the power was in the blades."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Wajiro. A thousand years of gold."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "A kingdom the colour of a coin."
+        }
+      ],
+      "start": 166
+    },
+    {
+      "no": "35",
+      "name": "It Is A Map",
+      "dur": 4,
+      "world": "apt",
+      "sc": "07",
+      "slug": "INT. SAFEHOUSE — CONTINUOUS",
+      "lens": "85mm",
+      "move": "Macro on the key, then her eyes",
+      "tags": [
+        "ART",
+        "VFX"
+      ],
+      "note": "The writing is on the shaft of the key and it is a map. Her line at the end is flat, not fierce — that is scarier.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She turns the key to the light. Writing, tiny."
+        },
+        {
+          "t": 0.32,
+          "who": "ZARA",
+          "s": "It is a map. I can read this."
+        },
+        {
+          "t": 0.58,
+          "who": "JAX",
+          "s": "Rex frightened me, Z."
+        },
+        {
+          "t": 0.82,
+          "who": "ZARA",
+          "s": "I took his hand. If he comes back I will finish him."
+        }
+      ],
+      "narr": [],
+      "start": 170
+    },
+    {
+      "no": "36",
+      "name": "The Metal Hand",
+      "dur": 3,
+      "world": "bunker",
+      "sc": "08",
+      "slug": "INT. MILITARY HOSPITAL — DAY",
+      "lens": "85mm",
+      "move": "Macro on the hand",
+      "tags": [
+        "VFX",
+        "SFX"
+      ],
+      "note": "Sound sells it. Every finger is a separate servo and none of them are quiet.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A cold room. A new hand, and it is not a hand."
+        },
+        {
+          "t": 0.5,
+          "s": "The fingers close one at a time."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "They built the hunter a new hand."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I did not know they were building him a new one."
+        }
+      ],
+      "start": 174
+    },
+    {
+      "no": "37",
+      "name": "The Slap",
+      "dur": 3,
+      "world": "bunker",
+      "sc": "08",
+      "slug": "INT. MILITARY HOSPITAL — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Static two-shot",
+      "tags": [
+        "STUNT"
+      ],
+      "note": "Reynolds is shouting at a machine and has not noticed.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "REYNOLDS",
+          "s": "Three billion dollars. And a girl beat you."
+        },
+        {
+          "t": 0.55,
+          "s": "He slaps him."
+        }
+      ],
+      "narr": [],
+      "start": 177
+    },
+    {
+      "no": "38",
+      "name": "My Prey",
+      "dur": 4,
+      "world": "bunker",
+      "sc": "08",
+      "slug": "INT. MILITARY HOSPITAL — CONTINUOUS",
+      "lens": "32mm",
+      "move": "Push as Rex stands",
+      "tags": [
+        "CREATURE",
+        "STUNT",
+        "VFX"
+      ],
+      "note": "No wind-up. The hand is just suddenly at his throat and the Colonel’s feet are off the floor.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The red comes up brighter."
+        },
+        {
+          "t": 0.26,
+          "s": "The metal hand takes Reynolds by the throat."
+        },
+        {
+          "t": 0.54,
+          "who": "REX",
+          "s": "Soldiers follow orders. Hunters follow blood."
+        },
+        {
+          "t": 0.8,
+          "who": "REX",
+          "s": "She is my prey now."
+        }
+      ],
+      "narr": [],
+      "start": 180
+    },
+    {
+      "no": "39",
+      "name": "The Forest",
+      "dur": 3,
+      "world": "wild",
+      "sc": "09",
+      "slug": "EXT. DEEP FOREST — DAY",
+      "lens": "28mm",
+      "move": "Tracking behind them",
+      "tags": [
+        "VFX"
+      ],
+      "note": "Montage starts here. Three locations, no dialogue, keep the cuts hard.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Days of walking. The forest does not thin out."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "After that there were no more roads."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Nine days of walking."
+        }
+      ],
+      "start": 184
+    },
+    {
+      "no": "40",
+      "name": "The Fall",
+      "dur": 4,
+      "world": "wild",
+      "sc": "09",
+      "slug": "EXT. MOUNTAIN FACE — DAY",
+      "lens": "35mm",
+      "move": "Wide, then the floor goes",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "They climb, the ledge lets go, and they drop out of frame. Whole shot is the ground failing.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A rock face, and wind that will not let them speak."
+        },
+        {
+          "t": 0.52,
+          "s": "The ground opens under them."
+        },
+        {
+          "t": 0.78,
+          "s": "They fall."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Only forest, and rock, and a ledge that let go."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Then the ground stopped being ground."
+        }
+      ],
+      "start": 187
+    },
+    {
+      "no": "41",
+      "name": "The River",
+      "dur": 4,
+      "world": "wild",
+      "sc": "09",
+      "slug": "INT. UNDERGROUND RIVER — CONTINUOUS",
+      "lens": "24mm",
+      "move": "In the water with them",
+      "tags": [
+        "STUNT",
+        "SFX",
+        "VFX"
+      ],
+      "note": "Cold, fast and black. They go under, and we go to black with them.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "They land in a river nobody has ever seen."
+        },
+        {
+          "t": 0.4,
+          "s": "It takes them like they weigh nothing."
+        },
+        {
+          "t": 0.78,
+          "s": "Everything goes black."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And a river under the world that had never carried anyone."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "And the water took us somewhere nobody has ever been."
+        }
+      ],
+      "start": 191
+    },
+    {
+      "no": "42",
+      "name": "The Grey Shore",
+      "dur": 3,
+      "world": "grave",
+      "sc": "10",
+      "slug": "INT. UNDERGROUND SHORE — UNKNOWN TIME",
+      "lens": "40mm",
+      "move": "Low on the mud",
+      "tags": [
+        "MAKEUP",
+        "SFX"
+      ],
+      "note": "They wake in silt, covered in it. Whatever is in the air here, it is not good air.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A grey shore under the world. They are still alive."
+        },
+        {
+          "t": 0.55,
+          "s": "The smell arrives before anything else does."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "It put them down on a grey shore."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "We woke up grey."
+        }
+      ],
+      "start": 195
+    },
+    {
+      "no": "43",
+      "name": "The Battlefield",
+      "dur": 4,
+      "world": "grave",
+      "sc": "10",
+      "slug": "INT. THE BONE FIELD — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Walking with them, low",
+      "tags": [
+        "ART",
+        "VFX"
+      ],
+      "note": "An army died here and nobody buried it. Rusted blades standing where they fell. Rats own the place now.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "An army lies where it fell. Nobody came back for it."
+        },
+        {
+          "t": 0.4,
+          "s": "Bones, horses, rusted swords standing in the dirt."
+        },
+        {
+          "t": 0.78,
+          "s": "Rats, in numbers."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "An army died here. Nobody ever came to collect it."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Men died here in their thousands and nobody ever came back for them."
+        }
+      ],
+      "start": 198
+    },
+    {
+      "no": "44",
+      "name": "The Castle",
+      "dur": 4,
+      "world": "grave",
+      "sc": "10",
+      "slug": "EXT. CASTLE OF WAJIRO — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Reveal, crane back, hold",
+      "tags": [
+        "VFX",
+        "ART"
+      ],
+      "note": "The reveal of the film. Black stone and gold, and they are two dots at the bottom of frame.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "They push through the dead trees."
+        },
+        {
+          "t": 0.42,
+          "s": "THE CASTLE OF WAJIRO. Black stone. Gold."
+        },
+        {
+          "t": 0.8,
+          "s": "They stand very small in front of the gates."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "This is what the army died in front of."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "And then we saw what they had died in front of."
+        }
+      ],
+      "start": 202
+    },
+    {
+      "no": "45",
+      "name": "No Keyhole",
+      "dur": 3,
+      "world": "grave",
+      "sc": "11",
+      "slug": "EXT. CASTLE GATES — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Tilt across the carvings",
+      "tags": [
+        "ART"
+      ],
+      "note": "Wolves and flying snakes in the carving. Both of them are promises.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Wolves. Flying snakes. A symbol in the middle."
+        },
+        {
+          "t": 0.48,
+          "who": "JAX",
+          "s": "There is no keyhole, Z."
+        }
+      ],
+      "narr": [],
+      "start": 206
+    },
+    {
+      "no": "46",
+      "name": "Life Current",
+      "dur": 4,
+      "world": "grave",
+      "sc": "11",
+      "slug": "EXT. CASTLE GATES — CONTINUOUS",
+      "lens": "65mm",
+      "move": "Close on hands and the symbol",
+      "tags": [
+        "SFX",
+        "MAKEUP"
+      ],
+      "note": "Water does nothing. The word is Yorukami-Chi and it does not mean water.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Jax wets his finger and draws. Nothing."
+        },
+        {
+          "t": 0.34,
+          "who": "ZARA",
+          "s": "Yorukami-Chi. Life current."
+        },
+        {
+          "t": 0.6,
+          "who": "ZARA",
+          "s": "It means blood."
+        },
+        {
+          "t": 0.82,
+          "s": "She takes his hand and opens it."
+        }
+      ],
+      "narr": [],
+      "start": 209
+    },
+    {
+      "no": "47",
+      "name": "The Doors Open",
+      "dur": 4,
+      "world": "grave",
+      "sc": "11",
+      "slug": "EXT. CASTLE GATES — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Wide, low, ground shaking",
+      "tags": [
+        "VFX",
+        "SFX"
+      ],
+      "note": "The symbol takes the blood and lights. Everything after this is inside.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She paints the symbol in his blood."
+        },
+        {
+          "t": 0.34,
+          "s": "It glows. The ground moves."
+        },
+        {
+          "t": 0.68,
+          "s": "The gates open."
+        },
+        {
+          "t": 0.86,
+          "who": "JAX",
+          "s": "We are in."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The castle asked for blood. They paid it."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "It wanted blood. Of course it wanted blood."
+        }
+      ],
+      "start": 213
+    },
+    {
+      "no": "48",
+      "name": "The Sleeper",
+      "dur": 4,
+      "world": "castle",
+      "sc": "12",
+      "slug": "INT. CASTLE — THE STONE TABLE",
+      "lens": "35mm",
+      "move": "Slow arc around the table",
+      "tags": [
+        "CREATURE",
+        "ART"
+      ],
+      "note": "Read it as a statue for three full seconds. Dust on it, dust everywhere, nothing moving.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A hall of pillars. A stone table in the middle."
+        },
+        {
+          "t": 0.45,
+          "s": "Something enormous is asleep on it, under the dust."
+        },
+        {
+          "t": 0.8,
+          "s": "It looks carved."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Something had been left inside to keep the place."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "There was something asleep in the first hall. We walked straight past it."
+        }
+      ],
+      "start": 217
+    },
+    {
+      "no": "49",
+      "name": "It Smells Blood",
+      "dur": 4,
+      "world": "castle",
+      "sc": "12",
+      "slug": "INT. CASTLE — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Close, locked, the eye",
+      "tags": [
+        "CREATURE",
+        "SFX",
+        "VFX"
+      ],
+      "note": "Dust comes off it in a sheet as it breathes in. The yellow eye opens last.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Somewhere in the castle, an open cut."
+        },
+        {
+          "t": 0.36,
+          "s": "Dust slides off a shoulder the size of a car."
+        },
+        {
+          "t": 0.66,
+          "s": "The eye opens. Yellow."
+        },
+        {
+          "t": 0.86,
+          "s": "It stands, and it goes looking."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "A thousand years asleep. It woke for one open cut."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "My hand was still open. I think that is what woke it."
+        }
+      ],
+      "start": 221
+    },
+    {
+      "no": "50",
+      "name": "The Giants",
+      "dur": 4,
+      "world": "castle",
+      "sc": "13",
+      "slug": "INT. HALL OF WHISPERS — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Walking wide, torch light",
+      "tags": [
+        "ART",
+        "VFX"
+      ],
+      "note": "Twenty-foot samurai, lacquer still good. Obsidian eyes: as the torch moves the reflection tracks them, and nobody says anything about it.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The quiet in here has weight. It presses on the ears."
+        },
+        {
+          "t": 0.4,
+          "s": "Giant samurai line the hall. Lacquer, not stone."
+        },
+        {
+          "t": 0.76,
+          "s": "Their eyes are polished black. They follow the light."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The hall remembers everyone who walks it."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "The quiet in there had a weight to it."
+        }
+      ],
+      "start": 225
+    },
+    {
+      "no": "51",
+      "name": "The Moving Gold",
+      "dur": 4,
+      "world": "castle",
+      "sc": "13",
+      "slug": "INT. HALL OF WHISPERS — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Hold on the rafters after they exit",
+      "tags": [
+        "CREATURE",
+        "VFX"
+      ],
+      "note": "They leave frame and the camera stays two seconds too long. A gold beam in the roof turns out to have scales.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "They go deeper. The camera stays."
+        },
+        {
+          "t": 0.44,
+          "s": "High in the rafters, a gold beam moves."
+        },
+        {
+          "t": 0.78,
+          "s": "A python the width of a man tastes the air where Jax stood."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And not everything in that roof is gold."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "And I swear the statues watched us go."
+        }
+      ],
+      "start": 229
+    },
+    {
+      "no": "52",
+      "name": "Her Own Blood",
+      "dur": 4,
+      "world": "castle",
+      "sc": "14",
+      "slug": "INT. CASTLE — THE CARVED WALL",
+      "lens": "65mm",
+      "move": "Close, her hand on the wall",
+      "tags": [
+        "MAKEUP",
+        "VFX"
+      ],
+      "note": "She asks, he cannot, and she does not argue — she opens her own hand instead. That is the whole relationship in four seconds.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "ZARA",
+          "s": "I need blood again."
+        },
+        {
+          "t": 0.3,
+          "who": "JAX",
+          "s": "Z, I can’t. Not again."
+        },
+        {
+          "t": 0.54,
+          "s": "She cuts her own palm instead and wets the stone."
+        },
+        {
+          "t": 0.8,
+          "s": "The letters take the blood and glow."
+        }
+      ],
+      "narr": [],
+      "start": 233
+    },
+    {
+      "no": "53",
+      "name": "The Shadow",
+      "dur": 3,
+      "world": "castle",
+      "sc": "14",
+      "slug": "INT. CASTLE — CONTINUOUS",
+      "lens": "35mm",
+      "move": "Static, something crosses the light",
+      "tags": [
+        "CREATURE",
+        "VFX"
+      ],
+      "note": "The shadow is the wolf and we never see the wolf. It takes the light out for half a second.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "ZARA",
+          "s": "The secret chamber. Secured by Rymon."
+        },
+        {
+          "t": 0.4,
+          "who": "ZARA",
+          "s": "A dead warrior. I don’t care about ghosts."
+        },
+        {
+          "t": 0.72,
+          "s": "Something enormous crosses behind them and takes the light."
+        }
+      ],
+      "narr": [],
+      "start": 237
+    },
+    {
+      "no": "54",
+      "name": "The Bandage",
+      "dur": 4,
+      "world": "castle",
+      "sc": "14",
+      "slug": "INT. CASTLE — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Close two-shot, no move",
+      "tags": [
+        "PRACTICAL"
+      ],
+      "note": "She nearly kisses him. He sees her open palm instead and ties it up. Then they split up, which is the mistake.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She pulls him close. The fear turns into something else."
+        },
+        {
+          "t": 0.34,
+          "s": "He looks at her mouth. Then at her bleeding hand."
+        },
+        {
+          "t": 0.6,
+          "s": "He bandages it instead."
+        },
+        {
+          "t": 0.84,
+          "who": "JAX",
+          "s": "You go that side. Be careful."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "There was a moment. They let it pass."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I nearly kissed him. He bandaged my hand."
+        }
+      ],
+      "start": 240
+    },
+    {
+      "no": "55",
+      "name": "The Blue Bottle",
+      "dur": 3,
+      "world": "castle",
+      "sc": "15",
+      "slug": "INT. SCROLL CORRIDOR — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Squeeze through, find the altar",
+      "tags": [
+        "ART",
+        "VFX"
+      ],
+      "note": "Only cold light in the castle. Whatever is in the bottle is the reason the corridor is this narrow.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A corridor of rotted scrolls, barely wide enough."
+        },
+        {
+          "t": 0.48,
+          "s": "A small altar. A bottle. Something blue, and it is lit from inside."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Then they split up. That was the mistake."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Then we split up. I have to live with that."
+        }
+      ],
+      "start": 244
+    },
+    {
+      "no": "56",
+      "name": "The Iron Door",
+      "dur": 3,
+      "world": "castle",
+      "sc": "15",
+      "slug": "INT. THE LONG BRIDGE — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Wide, him small against it",
+      "tags": [
+        "ART"
+      ],
+      "note": "Jax alone at the end of a bridge with a door built for something bigger than him.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Jax walks a bridge with nothing under it."
+        },
+        {
+          "t": 0.48,
+          "s": "A door of iron and spikes. He pushes. It does not care."
+        }
+      ],
+      "narr": [],
+      "start": 247
+    },
+    {
+      "no": "57",
+      "name": "Two Red Eyes",
+      "dur": 4,
+      "world": "castle",
+      "sc": "16",
+      "slug": "INT. BEYOND THE IRON DOOR — CONTINUOUS",
+      "lens": "32mm",
+      "move": "On the floor with them, dust",
+      "tags": [
+        "CREATURE",
+        "SFX"
+      ],
+      "note": "Door goes, they go over, and the room starts knocking. Two red eyes at the far end, and they are not the wolf’s yellow.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "On three. The door gives and takes them with it."
+        },
+        {
+          "t": 0.34,
+          "s": "Dust. Then the floor starts to knock. Thump. Thump."
+        },
+        {
+          "t": 0.7,
+          "s": "Two red eyes open in the dark at the far end."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The door came down. Something at the far end of the dark stood up."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Whatever came through that door was not the wolf."
+        }
+      ],
+      "start": 250
+    },
+    {
+      "no": "58",
+      "name": "Run",
+      "dur": 4,
+      "world": "castle",
+      "sc": "16",
+      "slug": "INT. CASTLE PASSAGE — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Running lead, low, claws behind",
+      "tags": [
+        "CREATURE",
+        "STUNT"
+      ],
+      "note": "The beast is faster than they are and the shot should say so. Claws take the stone up behind them.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The roar arrives before the animal does."
+        },
+        {
+          "t": 0.4,
+          "who": "JAX",
+          "s": "RUN!"
+        },
+        {
+          "t": 0.74,
+          "s": "It is faster than them. It was always going to be."
+        }
+      ],
+      "narr": [],
+      "start": 254
+    },
+    {
+      "no": "59",
+      "name": "The Jump",
+      "dur": 3,
+      "world": "castle",
+      "sc": "16",
+      "slug": "INT. CASTLE PASSAGE — THE GAP",
+      "lens": "35mm",
+      "move": "Side on, both jumps",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "He clears it. She goes second with the thing’s breath on her.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The floor ahead is gone. Jax jumps."
+        },
+        {
+          "t": 0.42,
+          "who": "JAX",
+          "s": "ZARA — JUMP!"
+        },
+        {
+          "t": 0.72,
+          "s": "She jumps."
+        }
+      ],
+      "narr": [],
+      "start": 258
+    },
+    {
+      "no": "60",
+      "name": "The Collapse",
+      "dur": 3,
+      "world": "castle",
+      "sc": "16",
+      "slug": "INT. CASTLE PASSAGE — CONTINUOUS",
+      "lens": "40mm",
+      "move": "With her as the floor goes",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "She lands it. The landing is what kills it. The wolf howls from above and does not follow.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She lands. The stone cracks under her."
+        },
+        {
+          "t": 0.4,
+          "who": "ZARA",
+          "s": "JAX!"
+        },
+        {
+          "t": 0.7,
+          "s": "The floor goes and she goes with it."
+        }
+      ],
+      "narr": [],
+      "start": 261
+    },
+    {
+      "no": "61",
+      "name": "The Ritual Circle",
+      "dur": 5,
+      "world": "castle",
+      "sc": "16",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "28mm",
+      "move": "Up from the floor, then hold on her",
+      "tags": [
+        "ART",
+        "VFX",
+        "MAKEUP"
+      ],
+      "note": "Gold, a rotting king, an eight-foot suit of armour with a spear. She has landed in the middle of a circle of skulls and broken one. End of the reel on her face doing nothing at all.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "She hits stone. Gold everywhere. A king rotting in a frame."
+        },
+        {
+          "t": 0.3,
+          "s": "An eight-foot armour stands in the corner holding a spear."
+        },
+        {
+          "t": 0.52,
+          "s": "She is lying in a circle of skulls. One of them broke under her."
+        },
+        {
+          "t": 0.72,
+          "s": "Black blood comes out of it and moves on its own."
+        },
+        {
+          "t": 0.9,
+          "s": "Jax is shouting her name. She cannot hear him any more."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "She came down in a circle of skulls, and broke one."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "The floor took me. I came down in a circle of skulls and broke one open."
+        }
+      ],
+      "start": 264
+    },
+    {
+      "no": "62",
+      "name": "No Answer",
+      "dur": 4,
+      "world": "castle",
+      "sc": "17",
+      "slug": "INT. CASTLE PASSAGE — THE BROKEN FLOOR",
+      "lens": "35mm",
+      "move": "Static, him at the edge",
+      "tags": [
+        "STUNT"
+      ],
+      "note": "The wolf loses interest and goes. That is worse — it leaves him alone with a hole and no answer.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The dust is still turning in the air."
+        },
+        {
+          "t": 0.24,
+          "s": "The wolf snarls once and goes back into the dark."
+        },
+        {
+          "t": 0.5,
+          "who": "JAX",
+          "s": "ZARA!"
+        },
+        {
+          "t": 0.74,
+          "s": "His own voice comes back to him. Nothing else does."
+        }
+      ],
+      "narr": [],
+      "start": 269
+    },
+    {
+      "no": "63",
+      "name": "Breaking Through",
+      "dur": 3,
+      "world": "castle",
+      "sc": "17",
+      "slug": "INT. CASTLE — BLOCKED ARCHWAY",
+      "lens": "28mm",
+      "move": "Hand-held, in with the shoulder",
+      "tags": [
+        "STUNT",
+        "SFX"
+      ],
+      "note": "No thinking. He goes through the planks with a shoulder and takes the grate with a boot.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "He finds a stair. It is blocked. He does not slow down."
+        },
+        {
+          "t": 0.55,
+          "s": "The wood goes. Then the grate."
+        }
+      ],
+      "narr": [],
+      "start": 273
+    },
+    {
+      "no": "64",
+      "name": "The Descent",
+      "dur": 3,
+      "world": "castle",
+      "sc": "17",
+      "slug": "INT. SPIRAL STAIR — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Running with him, low",
+      "tags": [
+        "STUNT"
+      ],
+      "note": "He is running blind down a stair he cannot see the bottom of, shouting the whole way.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "JAX",
+          "s": "ZARA! I’M COMING!"
+        },
+        {
+          "t": 0.55,
+          "s": "He takes the door off its lock and keeps going down."
+        }
+      ],
+      "narr": [],
+      "start": 276
+    },
+    {
+      "no": "65",
+      "name": "The Blood Rises",
+      "dur": 4,
+      "world": "castle",
+      "sc": "18",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Close on the pool, tilt up",
+      "tags": [
+        "VFX",
+        "CREATURE"
+      ],
+      "note": "The black blood does not dry and it does not run downhill. It goes up.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Zara has not moved. Neither has the silence."
+        },
+        {
+          "t": 0.34,
+          "s": "The black blood is bubbling."
+        },
+        {
+          "t": 0.7,
+          "s": "It leaves the floor and climbs."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "The blood in that room does not dry, and it does not run downhill."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I could not move. I could hear it climbing the walls."
+        }
+      ],
+      "start": 279
+    },
+    {
+      "no": "66",
+      "name": "The Gate",
+      "dur": 3,
+      "world": "castle",
+      "sc": "18",
+      "slug": "INT. LOWER STAIR — INTERCUT",
+      "lens": "50mm",
+      "move": "Close, sparks off the lock",
+      "tags": [
+        "SFX",
+        "STUNT"
+      ],
+      "note": "Cut against the chamber. His hands are opening up on the stone and he is not stopping.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A gate. He picks up a rock and starts on the lock."
+        },
+        {
+          "t": 0.58,
+          "s": "Sparks. His hands are bleeding. He does not notice."
+        }
+      ],
+      "narr": [],
+      "start": 283
+    },
+    {
+      "no": "67",
+      "name": "The Formation",
+      "dur": 5,
+      "world": "castle",
+      "sc": "18",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "32mm",
+      "move": "Slow rise as it builds",
+      "tags": [
+        "VFX",
+        "CREATURE"
+      ],
+      "note": "Smoke hardens into eight feet of obsidian. The katana arrives out of the fog, then the rest of the arsenal. The eye slits light purple, not red — this is not Rex.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The smoke thickens in the middle of the circle."
+        },
+        {
+          "t": 0.28,
+          "s": "Legs. A torso. A helmet."
+        },
+        {
+          "t": 0.56,
+          "s": "A katana forms in its hand out of nothing."
+        },
+        {
+          "t": 0.74,
+          "s": "Daggers and shuriken hang around it like a halo."
+        },
+        {
+          "t": 0.9,
+          "s": "Two purple flames open in the eye slits."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "It was building something. It had built it before."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "It made itself a body out of the dark. Then it made a sword."
+        }
+      ],
+      "start": 286
+    },
+    {
+      "no": "68",
+      "name": "The Royal Doors",
+      "dur": 4,
+      "world": "castle",
+      "sc": "19",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "28mm",
+      "move": "In with him through the doors",
+      "tags": [
+        "STUNT"
+      ],
+      "note": "He arrives and the room is empty. The crash is what breaks her trance.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "JAX",
+          "s": "The main chamber…"
+        },
+        {
+          "t": 0.3,
+          "s": "He puts a shoulder through the doors."
+        },
+        {
+          "t": 0.58,
+          "s": "The armour is not there. The room is empty."
+        },
+        {
+          "t": 0.8,
+          "who": "ZARA",
+          "s": "Jax…"
+        }
+      ],
+      "narr": [],
+      "start": 291
+    },
+    {
+      "no": "69",
+      "name": "The Strike",
+      "dur": 4,
+      "world": "castle",
+      "sc": "19",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "40mm",
+      "move": "Static, he crosses and stops",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "Rig for a lift and a stab with nothing on either end. Eight feet off the floor, legs still going.",
+      "lines": [
+        {
+          "t": 0,
+          "who": "JAX",
+          "s": "I’ve got you, Z!"
+        },
+        {
+          "t": 0.3,
+          "s": "Mid-run, something takes him off the floor."
+        },
+        {
+          "t": 0.58,
+          "s": "A blade goes through him and there is no blade."
+        },
+        {
+          "t": 0.84,
+          "s": "He coughs. His legs are still running."
+        }
+      ],
+      "narr": [],
+      "start": 295
+    },
+    {
+      "no": "70",
+      "name": "The Execution",
+      "dur": 3,
+      "world": "castle",
+      "sc": "19",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Static. Do not cut away.",
+      "tags": [
+        "STUNT",
+        "VFX"
+      ],
+      "note": "One cut. The body goes down and the head does not.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "An invisible hand closes on his throat."
+        },
+        {
+          "t": 0.45,
+          "s": "A slash. The body drops."
+        },
+        {
+          "t": 0.75,
+          "s": "The head stays in the air."
+        }
+      ],
+      "narr": [],
+      "start": 299
+    },
+    {
+      "no": "71",
+      "name": "The Blood Reveal",
+      "dur": 5,
+      "world": "castle",
+      "sc": "19",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "35mm",
+      "move": "Slow push as the shape fills in",
+      "tags": [
+        "VFX",
+        "MAKEUP"
+      ],
+      "note": "The film pays off here: the blood finds the surfaces and paints a king who was standing there the whole time.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Blood comes out of him and never reaches the floor."
+        },
+        {
+          "t": 0.32,
+          "s": "It sticks to something. Shoulders. A chest plate."
+        },
+        {
+          "t": 0.62,
+          "s": "A helmet."
+        },
+        {
+          "t": 0.86,
+          "s": "THE WAJIRO KING, painted in Jax, holding his head."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0.2,
+          "s": "And the blood showed them what had been standing there the whole time."
+        },
+        {
+          "v": "f",
+          "t": 0.2,
+          "s": "All of him went to painting something that was already there."
+        }
+      ],
+      "start": 302
+    },
+    {
+      "no": "72",
+      "name": "Frozen",
+      "dur": 3,
+      "world": "castle",
+      "sc": "19",
+      "slug": "INT. THE SECRET CHAMBER — CONTINUOUS",
+      "lens": "75mm",
+      "move": "Close on Zara. Nothing moves.",
+      "tags": [
+        "MAKEUP"
+      ],
+      "note": "No scream. She has no air. Hold two beats past comfortable and cut on the thunder.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Her mouth opens."
+        },
+        {
+          "t": 0.5,
+          "s": "Nothing comes out of it."
+        }
+      ],
+      "narr": [
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I had no air. I could not scream."
+        }
+      ],
+      "start": 307
+    },
+    {
+      "no": "73",
+      "name": "The Great War",
+      "dur": 4,
+      "world": "war",
+      "sc": "20",
+      "slug": "EXT. WAJIRO BATTLEFIELD — ANCIENT — RAIN",
+      "lens": "32mm",
+      "move": "Push through the rain to the hill",
+      "tags": [
+        "VFX",
+        "CROWD"
+      ],
+      "note": "Cut on thunder and war horns. Mud, rain, smoke, fire. The same pose as the chamber, a thousand years earlier.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Thunder. Horns."
+        },
+        {
+          "t": 0.34,
+          "s": "A field of mud and bodies under a burning sky."
+        },
+        {
+          "t": 0.7,
+          "s": "The KING stands on a hill of the dead in the same pose."
+        },
+        {
+          "t": 0.9,
+          "s": "In his hand, another king’s head."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "He had done this before. A thousand years before."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I know what he is now."
+        }
+      ],
+      "start": 310
+    },
+    {
+      "no": "74",
+      "name": "The Surrender",
+      "dur": 4,
+      "world": "war",
+      "sc": "20",
+      "slug": "EXT. BATTLEFIELD — CONTINUOUS",
+      "lens": "24mm",
+      "move": "Wide, the whole field goes down",
+      "tags": [
+        "CROWD",
+        "VFX"
+      ],
+      "note": "Half the army runs. The other half goes to its knees in one move. Whatever it costs, it is the shot.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "He roars, and the war stops."
+        },
+        {
+          "t": 0.4,
+          "s": "Half of them throw down their swords and run."
+        },
+        {
+          "t": 0.76,
+          "s": "The other half kneel where they stand."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Half an army ran. The other half knelt in the mud."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "A whole army knelt to him once."
+        }
+      ],
+      "start": 314
+    },
+    {
+      "no": "75",
+      "name": "Even The Beast",
+      "dur": 3,
+      "world": "war",
+      "sc": "20",
+      "slug": "EXT. BATTLEFIELD — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Low, the wolf lowers its head",
+      "tags": [
+        "CREATURE"
+      ],
+      "note": "The animal from the castle, alive and well, and it kneels too. That is the reveal of the sequence.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "The GIANT WOLF stands at his right hand. Alive."
+        },
+        {
+          "t": 0.52,
+          "s": "Even it lowers its head."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "Even the animal put its head down."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "Even the animal."
+        }
+      ],
+      "start": 318
+    },
+    {
+      "no": "76",
+      "name": "Part II: The Demon",
+      "dur": 4,
+      "world": "war",
+      "sc": "20",
+      "slug": "EXT. BATTLEFIELD — TITLE",
+      "lens": "40mm",
+      "move": "Crane back, hold, freeze",
+      "tags": [
+        "VFX"
+      ],
+      "note": "Freeze on the silhouette against the burning sky and put the card up.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "A god of war alone in a field of bowed heads."
+        },
+        {
+          "t": 0.55,
+          "s": "The frame stops moving."
+        },
+        {
+          "t": 0.78,
+          "s": "PART II — THE DEMON"
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "This was never a story about a key."
+        },
+        {
+          "v": "f",
+          "t": 0,
+          "s": "I did not kneel."
+        }
+      ],
+      "start": 321
+    },
+    {
+      "no": "77",
+      "name": "The Hunter Returns",
+      "dur": 4,
+      "world": "grave",
+      "sc": "PC",
+      "slug": "INT. UNDERGROUND RIVER — POST-CREDITS",
+      "lens": "35mm",
+      "move": "Low on the water, ship into frame",
+      "tags": [
+        "VFX",
+        "SFX"
+      ],
+      "note": "Fog on the water and one hull cutting it. The castle is a silhouette ahead of them the whole shot.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "Black water. Fog that does not move."
+        },
+        {
+          "t": 0.42,
+          "s": "An assault ship comes through it."
+        },
+        {
+          "t": 0.78,
+          "s": "Ahead: the castle."
+        }
+      ],
+      "narr": [
+        {
+          "v": "m",
+          "t": 0,
+          "s": "And the hunter is still coming."
+        }
+      ],
+      "start": 325
+    },
+    {
+      "no": "78",
+      "name": "Run, Little Rabbit",
+      "dur": 5,
+      "world": "grave",
+      "sc": "PC",
+      "slug": "INT. UNDERGROUND RIVER — CONTINUOUS",
+      "lens": "50mm",
+      "move": "Slow push onto Rex at the bow",
+      "tags": [
+        "CREATURE",
+        "VFX"
+      ],
+      "note": "The arm is finished now — blue in the joints, and it sounds expensive. Five operators behind him. Last line, then black.",
+      "lines": [
+        {
+          "t": 0,
+          "s": "CAPTAIN REX at the bow. He does not blink."
+        },
+        {
+          "t": 0.26,
+          "s": "The new hand closes. Clank. Blue light in the knuckles."
+        },
+        {
+          "t": 0.52,
+          "s": "Five of them behind him, kitted for a war."
+        },
+        {
+          "t": 0.76,
+          "who": "REX",
+          "s": "Run, little rabbit. The wolf is coming."
+        }
+      ],
+      "narr": [],
+      "start": 329
+    }
+  ]
+}
