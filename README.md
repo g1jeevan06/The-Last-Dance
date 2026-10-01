@@ -3,6 +3,9 @@
 
 Open `index.html` for the browser previz.
 
+The player includes [photographic PBR textures](assets/textures/README.md) for
+eight material families, with color, normal and roughness maps embedded for offline use.
+
 `index.json` contains the complete page as structured JSON: elements, attributes,
 text, styles and scripts. It preserves the original HTML exactly and is a data
 representation, not an executable webpage or a native Unreal scene.

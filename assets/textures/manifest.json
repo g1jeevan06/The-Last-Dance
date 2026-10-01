@@ -1,0 +1,200 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "resolution": "1k",
+  "materials": {
+    "concrete": {
+      "asset": "concrete_floor_02",
+      "source": "https://polyhaven.com/a/concrete_floor_02",
+      "maps": {
+        "color": {
+          "file": "assets/textures/concrete/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_diff_1k.jpg",
+          "md5": "1cfee53d2f82fa59726ab7ae6a2e8c09",
+          "bytes": 776097
+        },
+        "normal": {
+          "file": "assets/textures/concrete/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_nor_gl_1k.jpg",
+          "md5": "c2065fd81f571f4e39163ea5661128fb",
+          "bytes": 192757
+        },
+        "roughness": {
+          "file": "assets/textures/concrete/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_rough_1k.jpg",
+          "md5": "653d60d0db1872a49138455cf31c8326",
+          "bytes": 318550
+        }
+      }
+    },
+    "plaster": {
+      "asset": "grey_plaster",
+      "source": "https://polyhaven.com/a/grey_plaster",
+      "maps": {
+        "color": {
+          "file": "assets/textures/plaster/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster/grey_plaster_diff_1k.jpg",
+          "md5": "42d2ffe5338fcc0065e28076cbe15eba",
+          "bytes": 704079
+        },
+        "normal": {
+          "file": "assets/textures/plaster/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster/grey_plaster_nor_gl_1k.jpg",
+          "md5": "add2064b193d083c892aead5eaf461d2",
+          "bytes": 355288
+        },
+        "roughness": {
+          "file": "assets/textures/plaster/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster/grey_plaster_rough_1k.jpg",
+          "md5": "b97159bbbb4817965892ec7ab6efe46f",
+          "bytes": 635335
+        }
+      }
+    },
+    "stone": {
+      "asset": "dark_rock_02",
+      "source": "https://polyhaven.com/a/dark_rock_02",
+      "maps": {
+        "color": {
+          "file": "assets/textures/stone/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_rock_02/dark_rock_02_diff_1k.jpg",
+          "md5": "92e53acc3f9878b525d0234d8c51fadf",
+          "bytes": 592452
+        },
+        "normal": {
+          "file": "assets/textures/stone/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_rock_02/dark_rock_02_nor_gl_1k.jpg",
+          "md5": "ddae04d066a75ff94b7dd34e8c0f9b74",
+          "bytes": 1028835
+        },
+        "roughness": {
+          "file": "assets/textures/stone/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_rock_02/dark_rock_02_rough_1k.jpg",
+          "md5": "8751b2c4ca67b2d8defa15f5ab9ce396",
+          "bytes": 503425
+        }
+      }
+    },
+    "metal": {
+      "asset": "blue_metal_plate",
+      "source": "https://polyhaven.com/a/blue_metal_plate",
+      "maps": {
+        "color": {
+          "file": "assets/textures/metal/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_metal_plate/blue_metal_plate_diff_1k.jpg",
+          "md5": "a906d0e554596fb76c6969f2f644c5e6",
+          "bytes": 395923
+        },
+        "normal": {
+          "file": "assets/textures/metal/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_metal_plate/blue_metal_plate_nor_gl_1k.jpg",
+          "md5": "f14c0f01832f8b18c39f07e4b5d6f749",
+          "bytes": 238025
+        },
+        "roughness": {
+          "file": "assets/textures/metal/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_metal_plate/blue_metal_plate_rough_1k.jpg",
+          "md5": "76c3911d8ad2416e4db3104a2ef831c7",
+          "bytes": 402450
+        }
+      }
+    },
+    "deck": {
+      "asset": "metal_plate",
+      "source": "https://polyhaven.com/a/metal_plate",
+      "maps": {
+        "color": {
+          "file": "assets/textures/deck/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/metal_plate/metal_plate_diff_1k.jpg",
+          "md5": "bd9daf4c04046ca392a38b8df955ed26",
+          "bytes": 692234
+        },
+        "normal": {
+          "file": "assets/textures/deck/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/metal_plate/metal_plate_nor_gl_1k.jpg",
+          "md5": "d379e66130ad6ccff217ac9b13de935d",
+          "bytes": 770307
+        },
+        "roughness": {
+          "file": "assets/textures/deck/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/metal_plate/metal_plate_rough_1k.jpg",
+          "md5": "6e1c8672d804b90546a23db621515b16",
+          "bytes": 775206
+        }
+      }
+    },
+    "cloth": {
+      "asset": "denim_fabric_04",
+      "source": "https://polyhaven.com/a/denim_fabric_04",
+      "maps": {
+        "color": {
+          "file": "assets/textures/cloth/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric_04/denim_fabric_04_diff_1k.jpg",
+          "md5": "b220aee0ec5c9d907a9f0d938319b206",
+          "bytes": 942399
+        },
+        "normal": {
+          "file": "assets/textures/cloth/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric_04/denim_fabric_04_nor_gl_1k.jpg",
+          "md5": "b47d22cc83e0c0585d7a5596a5deae6c",
+          "bytes": 948018
+        },
+        "roughness": {
+          "file": "assets/textures/cloth/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric_04/denim_fabric_04_rough_1k.jpg",
+          "md5": "7e73cf0fa61aec5c88d00d73c100bf0e",
+          "bytes": 939925
+        }
+      }
+    },
+    "wood": {
+      "asset": "wood_table_worn",
+      "source": "https://polyhaven.com/a/wood_table_worn",
+      "maps": {
+        "color": {
+          "file": "assets/textures/wood/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_worn/wood_table_worn_diff_1k.jpg",
+          "md5": "8c71f701f70fef34b87fb7c8742ad0a5",
+          "bytes": 761543
+        },
+        "normal": {
+          "file": "assets/textures/wood/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_worn/wood_table_worn_nor_gl_1k.jpg",
+          "md5": "d8e76d135e94e32bc81eedb3342c7614",
+          "bytes": 747433
+        },
+        "roughness": {
+          "file": "assets/textures/wood/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_worn/wood_table_worn_rough_1k.jpg",
+          "md5": "1e068051a440933d9d054dc6614f950f",
+          "bytes": 655232
+        }
+      }
+    },
+    "leather": {
+      "asset": "brown_leather",
+      "source": "https://polyhaven.com/a/brown_leather",
+      "maps": {
+        "color": {
+          "file": "assets/textures/leather/color.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_albedo_1k.jpg",
+          "md5": "080b3bf1372766ff2c7ff121ed07b5e8",
+          "bytes": 503348
+        },
+        "normal": {
+          "file": "assets/textures/leather/normal.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_nor_gl_1k.jpg",
+          "md5": "b63ae0121a415c23d74eed0b07fc6065",
+          "bytes": 863280
+        },
+        "roughness": {
+          "file": "assets/textures/leather/roughness.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_rough_1k.jpg",
+          "md5": "0f3a0148c8d2d25fbeca67e64e79bca0",
+          "bytes": 686142
+        }
+      }
+    }
+  }
+}
