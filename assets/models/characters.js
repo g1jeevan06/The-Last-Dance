@@ -28,21 +28,36 @@ const CHARACTER_MODELS={
       model.traverse(n=>{if(n.isMesh&&n.name==='Eyebrows'){
         n.material=n.material.clone();n.material.color.setHex(f.modelOptions.hair||0x29231e);
       }});
-      // Give the base body a fitted cloth costume, keeping textured face and arms.
+      // Rest-space coordinates keep the costume attached through every skeletal pose.
       model.traverse(n=>{if(n.isSkinnedMesh&&/^superhero_/i.test(n.name)){
         n.material=n.material.clone();
-        const color=new THREE.Color(f.modelOptions.cloth||0x303740);
+        n.geometry.computeBoundingBox();
+        const bodyBounds=n.geometry.boundingBox;
+        const bodyHeight=bodyBounds.max.y-bodyBounds.min.y;
+        const color=new THREE.Color(f.modelOptions.cloth??0x303740);
+        n.material.metalness=0;
+        n.material.customProgramCacheKey=()=> 'last-dance-wardrobe-v2';
         n.material.onBeforeCompile=shader=>{
-          shader.uniforms.costumeColor={value:color};shader.uniforms.bodyHeight={value:h};
+          shader.uniforms.costumeColor={value:color};
+          shader.uniforms.bodyHeight={value:bodyHeight};
+          shader.uniforms.bodyFloor={value:bodyBounds.min.y};
           shader.vertexShader='varying vec3 costumePosition;\n'+shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\ncostumePosition=position;');
-          shader.fragmentShader='varying vec3 costumePosition;uniform vec3 costumeColor;uniform float bodyHeight;\n'+shader.fragmentShader;
+          shader.fragmentShader='varying vec3 costumePosition;uniform vec3 costumeColor;uniform float bodyHeight;uniform float bodyFloor;\n'+shader.fragmentShader;
           shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
-            float torso=1.0-smoothstep(bodyHeight*.145,bodyHeight*.15,abs(costumePosition.x));
-            float trousers=1.0-smoothstep(bodyHeight*.48,bodyHeight*.485,costumePosition.y);
-            float suit=(1.0-smoothstep(bodyHeight*.785,bodyHeight*.79,costumePosition.y))*max(torso,trousers);
-            float weave=.94+.06*sin(costumePosition.y*1600.0)*sin(costumePosition.x*1600.0);
-            diffuseColor.rgb=mix(diffuseColor.rgb,costumeColor*weave,suit);`);
-          shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,.94,suit);');
+            vec3 garment=vec3(costumePosition.x,costumePosition.y-bodyFloor,costumePosition.z)/bodyHeight;
+            float torso=1.0-smoothstep(.145,.15,abs(garment.x));
+            float trousers=1.0-smoothstep(.51,.514,garment.y);
+            float sleeves=(1.0-smoothstep(.29,.295,abs(garment.x)))*smoothstep(.59,.60,garment.y);
+            float suit=(1.0-smoothstep(.805,.81,garment.y))*max(max(torso,trousers),sleeves);
+            float boots=1.0-smoothstep(.14,.145,garment.y);
+            float belt=smoothstep(.505,.509,garment.y)*(1.0-smoothstep(.522,.526,garment.y))*torso;
+            float seam=(1.0-smoothstep(.0015,.0035,abs(garment.x)))*smoothstep(.53,.54,garment.y)*torso;
+            float weave=.97+.03*sin(garment.y*650.0)*sin(garment.x*650.0);
+            vec3 fabric=costumeColor*mix(.72,1.0,smoothstep(.52,.53,garment.y))*weave;
+            fabric=mix(fabric,vec3(.025,.029,.035),max(boots,belt));
+            fabric=mix(fabric,fabric*.65,seam*.6);
+            diffuseColor.rgb=mix(diffuseColor.rgb,fabric,suit);`);
+          shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,mix(.94,.72,max(boots,belt)),suit);');
         };
       }});
       model.updateMatrixWorld(true);
@@ -89,6 +104,8 @@ const CHARACTER_MODELS={
     for(const f of MODEL_FIGURES){
       if(!f.importedModel)continue;
       f.placeholderMeshes.forEach(n=>n.visible=false);
+      // The fitted skinned top replaces the old rigid chest shells.
+      f.kit.top.traverse(n=>{if(n.isMesh)n.visible=false;});
       f.root.updateWorldMatrix(true,true);
       rootInverse.copy(f.root.getWorldQuaternion(q)).invert();
       // Retarget world-space rotation deltas in parent-before-child order.
